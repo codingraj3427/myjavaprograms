@@ -1,7 +1,9 @@
 package com.company;
 
 
-class base1 {
+class base1
+
+{
 
     base1() {
 
@@ -13,6 +15,8 @@ class base1 {
     }
 
 }
+
+//This is also an Inheritance from base class
 
 class derived1 extends base1
 {
@@ -31,12 +35,19 @@ class derived1 extends base1
 
 }
 
+
+//THis is an inheritance extending from the derived class
+
 class Childofderived extends derived1
 {
     Childofderived()
     {
         System.out.println(" I am a child of derived constriuctor");
     }
+
+
+
+//    THis is an construction in java in the Inheritence
 
     Childofderived (int x,int y,int z)
     {

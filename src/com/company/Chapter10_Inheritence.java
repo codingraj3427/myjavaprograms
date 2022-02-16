@@ -20,6 +20,11 @@ class joy
     }
 }
 
+
+
+//This is an example of inheritence in Java Program.Which is extending the parent or Super class
+
+
 class derived extends joy
 {
     public int y;
@@ -33,6 +38,9 @@ class derived extends joy
         this.y = y;
     }
 }
+
+
+//This is our main class in java program
 
 public class Chapter10_Inheritence
 {
