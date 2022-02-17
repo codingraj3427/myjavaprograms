@@ -2,6 +2,8 @@ package com.company;
 import java.util.Scanner;
 public class Java_05_TakingInput {
     public static void main(String[] args) {
+
+
         System.out.println("Taking input from the user");
         Scanner sc= new Scanner(System.in);
         System.out.println("enter the number 1");
