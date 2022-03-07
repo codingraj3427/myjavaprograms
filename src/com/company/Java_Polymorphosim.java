@@ -1,6 +1,8 @@
 package com.company;
 
-interface MyCamera{
+
+
+interface MyCamera2{
     void takeSnap();
     void recordVideo();
     private void greet(){
@@ -13,12 +15,12 @@ interface MyCamera{
 }
 
 
-interface MyWifi{
+interface MyWifi2{
     String[] getNetworks();
     void connectToNetwork(String network);
 }
 
-class MyCellPhone{
+class MyCellPhone2{
     void callNumber(int phoneNumber){
         System.out.println("Calling "+ phoneNumber);
     }
@@ -28,7 +30,7 @@ class MyCellPhone{
 
 }
 
-class MySmartPhone extends MyCellPhone implements MyWifi, MyCamera{
+class MySmartPhone2 extends MyCellPhone2 implements MyWifi2, MyCamera2{
     public void takeSnap(){
         System.out.println("Taking snap");
     }
@@ -51,14 +53,17 @@ class MySmartPhone extends MyCellPhone implements MyWifi, MyCamera{
         System.out.println("Connecting to " + network);
     }
 }
-public class defaultMethod{
-    public static void main(String[] args) {
-        MySmartPhone ms = new MySmartPhone();
-        ms.record4KVideo();
-        // ms.greet(); --> Throws an error!
-        String[] ar = ms.getNetworks();
-        for (String item: ar) {
-            System.out.println(item);
-        }
+public class Java_Polymorphosim {
+    public static void main(String[] args)
+    {
+
+        // Now the example of Polymorphism we will see here.
+        MyCamera2 cam1 = new MySmartPhone2();
+        // cam1.MyWifi2();    //This is not allowed
+
+        cam1.recordVideo();
+        cam1.takeSnap();
+
+
     }
 }
